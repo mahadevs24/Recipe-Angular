@@ -1,0 +1,12 @@
+<div class="container">
+  <app-header (onSelectEmitter)="onFeaturehandler($event)">jjj</app-header>
+
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipe *ngIf="currentFeature === 'recipe'"></app-recipe>
+      <app-shopping-list
+        *ngIf="currentFeature === 'shopping-list'"
+      ></app-shopping-list>
+    </div>
+  </div>
+</div>
